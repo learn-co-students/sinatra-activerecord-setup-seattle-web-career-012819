@@ -2,13 +2,18 @@
 source "https://rubygems.org"
 
 gem 'sinatra'
+gem 'activerecord', '4.2.5'
+gem 'sinatra-activerecord'
 gem 'thin'
 gem 'require_all'
 
 
 group :development do
+  gem 'sqlite3', '~> 1.3.6'
+  gem 'tux'
 	gem 'shotgun'
 	gem 'pry'
+  gem 'rake'
 end
     
 group :test do
